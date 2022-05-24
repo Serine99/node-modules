@@ -1,2 +1,3 @@
 # node-modules
-10 modules of node.js
+Some basic modules of node.js.
+Each module with examples is specified in separeate js or mjs files.
