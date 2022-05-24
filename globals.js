@@ -26,11 +26,7 @@ console.log(AbortController.signal);
 // console.log(k);
 
 const ac1 = new AbortController();
-
-// Use either the onabort property...
 ac1.signal.onabort = () => console.log('aborted!');
-
-// Or the EventTarget API...
 ac1.signal.addEventListener('abort', (event) => {
   console.log(event.type);  // Prints 'abort'
 }, { once: true });
